@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+
+body {
+    background-color: #fff;
+}
+
+#introduction {
+    height: 33rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(background.svg);
+    background-size: 1440px 560px;
+}
+
+h1, h3, p {
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+
+hr {
+    border-top: 1px solid #000;
+    width: 23%;
+    margin-left: 0;
+}
