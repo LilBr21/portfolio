@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body {
     background-color: #fff;
@@ -23,3 +24,59 @@ hr {
     width: 23%;
     margin-left: 0;
 }
+
+#skills-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 0 3rem 0;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    /* transition: transform 4s .25s ease-out; */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.skill-name {
+    font-size: 13px;
+}
+
+#styled-logo {
+    height: 96px;
+    width: 96px;
+}
+
+@keyframes wipe-enter {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .skills-row-animation {
+        animation: wipe-enter 2.5s 1;
+    }
+
+}
+
