@@ -15,7 +15,7 @@ body {
     background-size: 1440px 560px;
 }
 
-h1, h3, p {
+h1, h3, h4, p {
     font-family: 'Kaisei HarunoUmi', serif;
 }
 
@@ -25,7 +25,7 @@ hr {
     margin-left: 0;
 }
 
-#skills-container {
+#skills-container, #projects-container {
     display: flex;
     flex-direction: column;
 }
@@ -38,13 +38,111 @@ h2 {
     padding: 3rem 0 3rem 0;
 }
 
+#cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% auto;
+    justify-self: center;
+    align-self: center;
+    /* justify-content: center;
+    align-items: center; */
+    width: 90%;
+    height: 700px;
+    margin-top: 2rem;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 5px;
+}
+
+/* .project-pic {
+    height: 100%;
+    width: 50%;
+    border-color: #184b4e;
+} */
+
+#first-project-title-conatiner {
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/surf-app.png");
+
+}
+
+.title {
+    height: 2rem;
+    width: 33%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.second-part-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 1.5rem
+}
+
+.project-description {
+    padding: 1rem 1.5rem 0 1.5rem;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.technologies-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.technology {
+    padding: 0.5rem;
+}
+
+#styled-technology {
+    height: 50px;
+    width: 50px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    padding: 1rem;
+    color: #000;
+}
+
+.link:hover {
+    color: rgb(219, 63, 63)
+}
+
 .skills-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
-    /* transition: transform 4s .25s ease-out; */
 }
 
 .skill {
@@ -64,6 +162,7 @@ h2 {
     width: 96px;
 }
 
+
 @keyframes wipe-enter {
     0% {
         transform: translateX(100%);
@@ -75,7 +174,7 @@ h2 {
 
 @media (prefers-reduced-motion: no-preference) {
     .skills-row-animation {
-        animation: wipe-enter 2.5s 1;
+        animation: wipe-enter 4s 1;
     }
 
 }
