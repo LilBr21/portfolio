@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body {
-    background-color: #fff;
+    background-color: #eeeeee;
 }
 
 #introduction {
@@ -15,14 +15,23 @@ body {
     background-size: 1440px 560px;
 }
 
+h1, h3 {
+    color: #222831;
+}
+
 h1, h3, h4, p {
     font-family: 'Kaisei HarunoUmi', serif;
+    color: #222831;
 }
 
 hr {
-    border-top: 1px solid #000;
+    border-top: 1px solid #ff5722;
     width: 23%;
     margin-left: 0;
+}
+
+#intro-text {
+    color: #2d4059;
 }
 
 #skills-container, #projects-container {
@@ -30,206 +39,128 @@ hr {
     flex-direction: column;
 }
 
+#projects-part-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h2 {
     font-family: 'Karla', sans-serif;
     font-size: 30px;
+    color: #222831;
     align-self: center;
     justify-self: center;
     padding: 3rem 0 3rem 0;
 }
 
-#cards {
+/* #cards {
     display: flex;
     flex-direction: column;
-}
+} */
 
 
 .card-container {
     perspective: 1000px;
-}
-
-.card {
-    position:relative;
-    color:#000;
-    text-align:center;
-    margin:80px;
-    width: 25em;
-    height: 22em;
-    transition: all 0.6s ease;
-    transform-style: preserve-3d;
-  
-   }
-
-   .front, .back {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width: 25em;
-    height: 22em;
-    padding-top: 70px;
-    text-align: center;
-    backface-visibility:hidden;
-    cursor: pointer;
-  }
-
-  .front {
-      background-image: url("./images/surf-app.png");
-  }
-
-  .back {
-      background-color: #000;
-  }
-  
-  .back{
-    background:#000; 
-     transform: rotateY(180deg);
-  }
-  .card:hover{
-    transform: rotateY(180deg);
-   }
-  
-
-    /* justify-self: center;
-    align-self: center;
-    transform: translate(-50%, -50%);
-    transform-style: preserve-3d;
-    width: 500px;
-    height: 300px;
-    perspective: 600px;
-    transition: 0.5s; */
-    /* justify-content: center;
-    align-items: center; */
-    /* margin-top: 2rem; */
-
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    border-radius: 5px;
-}
-
-.front {
-    background-image: url("./images/surf-app.png");
-    height: 100%;
-    width: 100%;
-}
-
-.card .front {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotatex(-180deg);
-}
-
-.card .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotatex(180deg);
-    transition: 0.5s;
-  }
-
-  .card .back::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .card:hover .back {
-    transform: rotatex(0deg);  
-  } */
-
-/* .project-pic {
-    height: 100%;
-    width: 50%;
-    border-color: #184b4e;
-} */
-
-/* #first-project-title-conatiner, #second-project-title-container {
-    overflow: hidden;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* 
-#first-project-title-conatiner {
-    background-image: url("./images/surf-app.png");
-}
-
-#second-project-title-container {
-    background-image: url("./images//quiz-app.png");
-} */
-/*
-.title {
-    height: 2rem;
-    width: 33%;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.second-part-container { */
-  /*  grid-column-start: 2;
-    grid-column-end: 3; 
-    padding: 1.5rem
-}
-
-.project-description {
-    padding: 1rem 1.5rem 0 1.5rem;
-    text-align: justify;
-    margin-bottom: 0;
-}
-
-.technologies-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 1.5rem;
-}
-
-.technology {
-    padding: 0.5rem;
-}
-
-#styled-technology {
-    height: 50px;
-    width: 50px;
-}
-
-.links {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.link {
-    padding: 1rem;
-    color: #000;
-}
+.card {
+    position:relative;
+    color: #222831;
+    text-align:center;
+    margin:80px;
+    width: 288px;
+    height: 555px;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+  
+   }
 
-.link:hover {
-    color: rgb(219, 63, 63)
-}
-*/
+   .front-1, .front-2, .back {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width: 288px;
+    height: 555px;
+    padding-top: 70px;
+    text-align: center;
+    backface-visibility:hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .front-1 {
+      background-image: url("./images/mobile-surf-app.png");
+  }
+
+  .front-2 {
+      background-image: url("./images/mobile-quiz-app.png");
+  }
+
+  .back {
+      background-color: #222831;
+  }
+  
+  .back{
+    /* background: #222831;  */
+    background: rgb(34,40,49);
+    /* background: linear-gradient(131deg, rgba(34,40,49,1) 28%, rgba(255,87,34,1) 96%); */
+    background: linear-gradient(131deg, rgba(34,40,49,1) 28%, rgba(45,64,89,1) 60%);
+    transform: rotateY(180deg);
+  }
+  .card:hover{
+    transform: rotateY(180deg);
+   }
+
+   .card-title {
+       color: #ff5722;
+       font-family: 'Karla', sans-serif;
+       font-size: 30px;
+   }
+
+   #right-hr {
+       margin-left: auto;
+       margin-right: 0;
+   }
+  
+   .used-technologies {
+       color: #eeeeee;
+   }
+
+   .technologies-list {
+        color: #eeeeee;
+        list-style-position: inside;
+        text-align: left;
+        margin-left: 2rem;
+        list-style: none;
+   }
+
+   li::before {
+       content: "* ";
+       color: #ff5722;
+   }
+
+   .list-point {
+       padding: 0.3rem;
+   }
+
+   .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link {
+        padding: 1rem;
+        color: #ff5722;
+    }
+ 
  .skills-row {
     display: flex;
     flex-direction: row;
