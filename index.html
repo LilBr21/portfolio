@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <script src='script.js'></script>
+    <div id="header-part">
     <div id="introduction">
         <h1>Hi, I'm Halina</h1>
         <hr>
@@ -12,6 +13,10 @@
             Welcome to my portfolio. Here you can learn more about my work 
             and about me.
         </p>
+    </div>
+    <div data-aos="fade-left" id="background-image">
+        <img id="main-img" src="images/Humaaans - 1 Character.png" alt="decoration">
+    </div>
     </div>
     <div id="projects-part-title">
         <h2>My projects:</h2>
@@ -84,7 +89,7 @@
     </div>
     <div id="skills-container">
         <h2>My skillset:</h2>
-        <div class="skills-row skills-row-animation">
+        <div data-aos="fade-left" class="skills-row">
             <div class="skill">
                 <img src="https://img.icons8.com/color/96/000000/html-5--v1.png"/>
                 <p class="skill-name">HTML</p>
@@ -98,7 +103,7 @@
                 <p class="skill-name">JavaScript</p>
             </div>
         </div>
-        <div class="skills-row skills-row-animation">
+        <div data-aos="fade-right" class="skills-row">
             <div class="skill">
                 <img src="https://img.icons8.com/color/96/000000/react-native.png"/>
                 <p class="skill-name">React</p>
@@ -112,7 +117,7 @@
                 <p class="skill-name">Styled-components</p>
             </div>
         </div>
-        <div class="skills-row skills-row-animation">
+        <div data-aos="fade-left" class="skills-row">
             <div class="skill">
                 <img src="https://img.icons8.com/color/96/000000/git.png"/>
                 <p class="skill-name">Git</p>
@@ -123,4 +128,42 @@
             </div>
         </div>
     </div>
+    <div id="about-me-container">
+        <div id="about-me-title">
+            <h2>About me</h2>
+        </div>
+        <div id="about-columns">
+            <p class="about-me-txt">I am a self-taught developer, passionate 
+                about coding and gaining new skills. 
+                <br>
+                Besides coding, I have a master's degree in psychology. I am 
+                deeply intrested in the topic of social psychology. I also
+                really love surfing and horse-riding and every day I enjoy 
+                long walks with my dog - Phoebe. 
+            </p>
+            <div id="pic-of-me">
+                <img id="avatar" src="images/avatar.png">
+            </div>
+        </div>
+    </div>
+    <div id="contact-container">
+        <div id="contact-title">
+            <h2>Contact</h2>
+        </div>
+        <div id="contact-row">
+            <div class="contact-part">
+                <img class="contact-icon" src="https://img.icons8.com/ios/30/000000/phone.png"/>
+                <p class="contact-info">+48600143430</p>
+            </div>
+            <div class="contact-part">
+                <img class="contact-icon" src="https://img.icons8.com/ios/30/000000/email.png"/>
+                <p class="contact-info">halina.syposz@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src='script.js'></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({duration: 1200});
+    </script>
 </body>

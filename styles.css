@@ -2,36 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 body {
-    background-color: #eeeeee;
+    background-color: #fafafa;
+}
+
+#header-part {
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
 #introduction {
     height: 33rem;
     padding-left: 5rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url(background.svg);
+    /* background-image: url("./images/Humaaans\ -\ 1\ Character.png"); */
     background-size: 1440px 560px;
 }
 
 h1, h3 {
-    color: #222831;
+    color: #7c73e6;
 }
 
 h1, h3, h4, p {
     font-family: 'Kaisei HarunoUmi', serif;
-    color: #222831;
+    color: #7c73e6;
 }
 
 hr {
-    border-top: 1px solid #ff5722;
+    border-top: 1px solid rgba(255,233,227,1);
     width: 23%;
     margin-left: 0;
 }
 
 #intro-text {
-    color: #2d4059;
+    color: #7c73e6;
+}
+
+#background-image {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #skills-container, #projects-container {
@@ -39,7 +53,7 @@ hr {
     flex-direction: column;
 }
 
-#projects-part-title {
+#projects-part-title, #about-me-title, #contact-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +62,7 @@ hr {
 h2 {
     font-family: 'Karla', sans-serif;
     font-size: 30px;
-    color: #222831;
+    color: #7c73e6;
     align-self: center;
     justify-self: center;
     padding: 3rem 0 3rem 0;
@@ -108,9 +122,8 @@ h2 {
   
   .back{
     /* background: #222831;  */
-    background: rgb(34,40,49);
-    /* background: linear-gradient(131deg, rgba(34,40,49,1) 28%, rgba(255,87,34,1) 96%); */
-    background: linear-gradient(131deg, rgba(34,40,49,1) 28%, rgba(45,64,89,1) 60%);
+    background: rgb(250,250,250);
+    background: linear-gradient(131deg, rgba(250,250,250,1) 46%, rgba(255,233,227,1) 81%);
     transform: rotateY(180deg);
   }
   .card:hover{
@@ -118,7 +131,7 @@ h2 {
    }
 
    .card-title {
-       color: #ff5722;
+       color: #7c73e6;
        font-family: 'Karla', sans-serif;
        font-size: 30px;
    }
@@ -129,11 +142,11 @@ h2 {
    }
   
    .used-technologies {
-       color: #eeeeee;
+       color: #7c73e6;
    }
 
    .technologies-list {
-        color: #eeeeee;
+        color: #7c73e6;
         list-style-position: inside;
         text-align: left;
         margin-left: 2rem;
@@ -142,7 +155,7 @@ h2 {
 
    li::before {
        content: "* ";
-       color: #ff5722;
+       color: #c4c1e0;
    }
 
    .list-point {
@@ -158,7 +171,11 @@ h2 {
 
     .link {
         padding: 1rem;
-        color: #ff5722;
+        color: #c4c1e0;
+    }
+
+    .link:hover {
+        color: #7c73e6;
     }
  
  .skills-row {
@@ -186,19 +203,47 @@ h2 {
     width: 96px;
 }
 
-
-@keyframes wipe-enter {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(0)
-    }
+#about-columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .skills-row-animation {
-        animation: wipe-enter 4s 1;
-    }
+.about-me-txt {
+    columns: 1 2;
+    padding: 1.5rem;
+    line-height: 2.5rem;
+}
 
+#pic-of-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar {
+    width: 65%;
+    height: 65%;
+}
+
+#contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icon {
+    margin-left: 1.5rem;
+}
+
+.contact-info {
+    padding-left: 1rem;
+    font-size: 20px;
 }
