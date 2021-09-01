@@ -3,6 +3,35 @@
 
 body {
     background-color: #fafafa;
+    scroll-behavior: smooth;
+}
+
+#navbar-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c4c1e0;
+}
+
+#nav-bottom-line {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    justify-self: center;
+    align-self: center;
 }
 
 #header-part {
@@ -26,7 +55,7 @@ h1, h3 {
     color: #7c73e6;
 }
 
-h1, h3, h4, p {
+h1, h3, h4, p, a {
     font-family: 'Kaisei HarunoUmi', serif;
     color: #7c73e6;
 }
@@ -212,6 +241,7 @@ h2 {
     columns: 1 2;
     padding: 1.5rem;
     line-height: 2.5rem;
+    text-align: justify;
 }
 
 #pic-of-me {
