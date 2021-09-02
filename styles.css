@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fafafa;
     scroll-behavior: smooth;
@@ -253,6 +257,42 @@ h2 {
 #avatar {
     width: 65%;
     height: 65%;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container {
+    width: 40%;
+    background: rgba(255,233,227,1);
+}
+
+#inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea, button {
+    width: 70%;
+    margin: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+button {
+    background-color: #c4c1e0;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #7c73e6;
 }
 
 #contact-row {
