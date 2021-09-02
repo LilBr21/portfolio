@@ -295,6 +295,11 @@ button:hover {
     background-color: #7c73e6;
 }
 
+.error-message {
+    color:rgb(206, 40, 40);
+    font-size: 15px;
+}
+
 #contact-row {
     display: flex;
     flex-direction: row;
