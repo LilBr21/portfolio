@@ -4,7 +4,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div data-aos="fade-right" id="navbar-container">
+    <div id="navbar-container">
         <div class="nav-link">
             <a href="#projects-part-title">Projects</a>
         </div>
@@ -21,88 +21,84 @@
     <hr id="nav-bottom-line">
     <div id="header-part">
         <div id="introduction">
-            <h1>Hi, I'm Halina</h1>
+            <p id="hello">Hi, I'm</p>
+            <h1>Halina</h1>
             <hr>
-            <h3>I am a frontend developer.</h3>
+            <h3>I am a <span id="frontend">frontend developer</span>.</h3>
             <p id="intro-text">
                 Welcome to my portfolio. Here you can learn more about my work 
                 and about me.
             </p>
         </div>
-        <div data-aos="fade-left" id="background-image">
-            <img 
-                id="main-img" 
-                src="images/Humaaans - 1 Character.png" 
-                alt="decoration"
-            >
-        </div>
     </div>
     <div id="projects-part-title">
         <h2>My projects:</h2>
     </div>
-    <div class="card-container">
-        <div class="card">
-            <div class="card-content">
-                <span class="front-1"></span>
-                <span class="back">
-                    <h3 class="card-title">Surf retreats</h3>
-                    <hr>
-                    <p class="used-technologies">Technologies used:</p>
-                    <ul class="technologies-list">
-                        <li class="list-point">HTML</li>
-                        <li class="list-point">CSS</li>
-                        <li class="list-point">JacaScript</li>
-                        <li class="list-point">React</li>
-                        <li class="list-point">Styled-components</li>
-                    </ul>
-                    <hr id="right-hr">
-                    <div class="links">
-                        <a 
-                            class="link" 
-                            href="https://lilbr21.github.io/surf-retreats/" 
-                            target="_blank">
-                            LIVE
-                        </a>
-                        <a 
-                            class="link" 
-                            href="https://github.com/LilBr21/surf-retreats" 
-                            target="_blank">
-                            GitHub
-                        </a>
-                    </div>
-                </span>
+    <div class="cards">
+        <div data-aos="fade-up-left" class="project-card">
+            <div class="project-img">
+                <img src="images/mobile-surf-app.png" alt="project picture" />
+            </div>
+            <div class="project-description">
+                <h3 id="surf-title">Surf retreats</h3>
+                <div class="about-project-container">
+                <p class="about project">This is a one page 
+                    application made with React, which contains fake surf 
+                    retreats offer. It was made for educational purposes. Whole 
+                    site is divided into 5 main parts: general description, 
+                    available destinations, photo gallery, faq and bookings. 
+                    They are all linked to the menu.
+                </p>
+                <h3>Used Technologies:</h3>
+                <p class="about-project">
+                    HTML, CSS, JavaScript, React, Styled-components
+                </p>
+                </div>
+                <div class="links">
+                    <a 
+                        class="surf-link" 
+                        href="https://lilbr21.github.io/surf-retreats/" 
+                        target="_blank">
+                        LIVE
+                    </a>
+                    <a 
+                        class="surf-link" 
+                        href="https://github.com/LilBr21/surf-retreats" 
+                        target="_blank">
+                        GitHub
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <span class="front-2"></span>
-                <span class="back">
-                    <h3 class="card-title">Movie quiz</h3>
-                    <hr>
-                    <p class="used-technologies">Technologies used:</p>
-                    <ul class="technologies-list">
-                        <li class="list-point">HTML</li>
-                        <li class="list-point">CSS</li>
-                        <li class="list-point">JacaScript</li>
-                        <li class="list-point">React</li>
-                        <li class="list-point">Redux</li>
-                    </ul>
-                    <hr id="right-hr">
-                    <div class="links">
-                        <a 
-                            class="link" 
-                            href="https://lilbr21.github.io/super-quiz/" 
-                            target="_blank">
-                            LIVE
-                        </a>
-                        <a 
-                            class="link" 
-                            href="https://github.com/LilBr21/super-quiz" 
-                            target="_blank">
-                            GitHub
-                        </a>
-                    </div>
-                </span>
+        <div data-aos="fade-up-right" class="project-card">
+            <div class="project-img">
+                <img src="images/mobile-quiz-app-2.png" alt="project picture" />
+            </div>
+            <div class="project-description">
+                <h3 id="quiz-title">Movie quiz</h3>
+                <div class="about-project-container">
+                <p class="about project">This is a short quiz application made 
+                    with React. User's goal is to guess the title of the movie 
+                    represented by the set of emojis. During the game user can 
+                    read up to 3 hints. This application is fully responsive.
+                </p>
+                <h3>Used Technologies:</h3>
+                <p class="about-project">HTML, CSS, JavaScript, React, Redux</p>
+                </div>
+                <div class="links">
+                    <a 
+                        class="quiz-link" 
+                        href="https://lilbr21.github.io/super-quiz/" 
+                        target="_blank">
+                        LIVE
+                    </a>
+                    <a 
+                        class="quiz-link" 
+                        href="https://github.com/LilBr21/super-quiz" 
+                        target="_blank">
+                        GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -152,6 +148,11 @@
             <h2>About me</h2>
         </div>
         <div id="about-columns">
+            <div id="emojis-row">
+                <img src="./images/image 1103.png" class="emoji" />
+                <img src="./images/image 1114.png" class="emoji" />
+                <img src="./images/image 372.png" class="emoji" />
+            </div>
             <p class="about-me-txt">I am a self-taught developer, passionate 
                 about coding and gaining new skills. 
                 <br>
@@ -160,8 +161,10 @@
                 really love surfing and horse-riding and every day I enjoy 
                 long walks with my dog - Phoebe. 
             </p>
-            <div id="pic-of-me">
-                <img id="avatar" src="images/avatar.png">
+               
+            <div id="emojis-row">
+                <img src="images/image 938.png" class="emoji" />
+                <img src="./images/image 1188.png" class="emoji" />
             </div>
         </div>
     </div>
@@ -170,17 +173,41 @@
             <h2>Contact</h2>
         </div>
         <div id="form-container">
-            <form id="form">
+            <form id="form" action="https://formsubmit.co/halina.syposz@email.com" method="POST">
                 <div id="inputs-container">
-                    <input type="text" placeholder="Name" id="firstName"/>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        placeholder="Name" 
+                        id="firstName"
+                    />
                     <div class="error-message" id="error-firstName"></div>
-                    <input type="text" placeholder="Surname" id="surname"/>
+                    <input 
+                        type="text" 
+                        name="surname" 
+                        placeholder="Surname" 
+                        id="surname"
+                    />
                     <div class="error-message" id="error-surname"></div>
-                    <input type="email" placeholder="Email" id="email" />
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Email" 
+                        id="email" 
+                    />
                     <div class="error-message" id="error-email"></div>
-                    <input type="number" placeholder="Phone number" id="phone" />
-                    <span>Message:</span>
-                    <textarea id="message" rows="5"></textarea>
+                    <input 
+                        type="number" 
+                        name="phone" 
+                        placeholder="Phone number" 
+                        id="phone" 
+                    />
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Message" 
+                        rows="5">
+                    </textarea>
                     <button type="submit">Send</button>
                 </div>
             </form>
@@ -189,7 +216,7 @@
             <div class="contact-part">
                 <img 
                     class="contact-icon" 
-                    src="https://img.icons8.com/ios/30/000000/phone.png"
+                    src="./images/call_calling.png"
                     alt="phone"
                 >
                 <p class="contact-info">+48600143430</p>
@@ -197,7 +224,7 @@
             <div class="contact-part">
                 <img 
                     class="contact-icon" 
-                    src="https://img.icons8.com/ios/30/000000/email.png"
+                    src="./images/email_send.png"
                     alt="email"
                 >
                 <p class="contact-info">halina.syposz@gmail.com</p>
@@ -206,7 +233,7 @@
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({duration: 1200});
+      AOS.init({duration: 1000});
     </script>
     <script type="text/javascript" defer src='script.js'></script>
 </body>
